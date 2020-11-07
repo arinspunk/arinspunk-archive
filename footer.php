@@ -14,7 +14,7 @@
 					<div class="item item--col-6">
 						<p>© Arinspunk</p>
 					</div>
-					<div class="item item--col-6">
+					<!-- <div class="item item--col-6">
 						<nav>
 							<ul class="footer__languages">
 								<li>
@@ -29,7 +29,7 @@
 								</li>
 							</ul>
 						</nav>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</footer>

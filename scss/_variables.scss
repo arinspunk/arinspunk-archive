@@ -3,9 +3,6 @@ $unit: 6;
 $gutter: $unit * 6#{px};
 $gutter-min: $unit * 3#{px};
 
-// Fonts
-$font: 'Isaac', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
 // Colors
 @function tint($color, $percentage) {
   @return mix(white, $color, $percentage);
@@ -24,6 +21,9 @@ $color-primary-02: tint($color-primary, 83.333%);
 $color-primary-01: tint($color-primary, 91.667%);
 $color-primary-00: tint($color-primary, 100%);
 $color-secondary: #0000ee;
+
+// Fonts
+$font: 'Isaac', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 @font-face {
   font-family: 'Isaac';
