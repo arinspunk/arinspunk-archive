@@ -1,0 +1,26 @@
+// Units
+$unit: 6;
+$gutter: $unit * 6#{px};
+$gutter-min: $unit * 3#{px};
+
+// Fonts
+$font: 'Isaac', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Colors
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+$color-primary: #000;
+$color-primary-11: tint($color-primary, 8.333%);
+$color-primary-10: tint($color-primary, 16.67%);
+$color-primary-09: tint($color-primary, 25%);
+$color-primary-08: tint($color-primary, 33.333%);
+$color-primary-07: tint($color-primary, 41.667%);
+$color-primary-06: tint($color-primary, 50%);
+$color-primary-05: tint($color-primary, 58.333%);
+$color-primary-04: tint($color-primary, 66.667%);
+$color-primary-03: tint($color-primary, 75%);
+$color-primary-02: tint($color-primary, 83.333%);
+$color-primary-01: tint($color-primary, 91.667%);
+$color-primary-00: tint($color-primary, 100%);
+$color-secondary: #0000ee;
