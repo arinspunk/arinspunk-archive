@@ -1,0 +1,107 @@
+* {
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	    	box-sizing:border-box;
+}
+html {
+	overflow-x:hidden;
+	font-size:62.5%; /* Para usar rem de forma "amable": 1px = 1rem */
+	-webkit-text-size-adjust:100%;
+		-ms-text-size-adjust:100%;
+}
+body {
+	width: 100%;
+	margin: 0 auto !important;
+	overflow-x:hidden;
+	font-family: $font;
+	font-size: 1.6rem;
+	line-height: $unit * .5#{rem};
+	color: $color-primary;
+	background: $color-primary-00;
+	//background: $color-primary-00 url('../img/grid.jpg');
+	@include transition(.3s ease);
+	-webkit-font-variant-ligatures: normal;
+       -moz-font-variant-ligatures: normal;
+            font-variant-ligatures: normal;
+	text-rendering: optimizeLegibility;
+	@media all and (max-width: 1279px) {
+		font-size: 1.5rem;
+		line-height: $unit * .4#{rem};
+	}	
+}
+h1, h2, h3 {
+	margin-top: 0;
+	font-weight: normal;
+	&.unused {
+		color: $color-primary-05;
+	}
+}
+h1 {
+	font-size: 7.3rem;
+	line-height: $unit * 1.6#{rem};
+	@media all and (max-width: 1279px) {
+		font-size: 5.8rem;
+		line-height: 7.2rem;
+	}
+	@media all and (max-width: 767px) {
+		font-size: 4.5rem;
+		line-height: 6rem;	
+	}
+}
+h2 {
+	font-size: 3.2rem;
+	line-height: 3.2rem;
+	@media all and (max-width: 1279px) {
+		font-size: 2.5rem;	
+	}
+}
+h3 {
+	font-size: 1.6rem;
+	@media all and (max-width: 1279px) {
+		font-size: 1.5rem;	
+	}
+}
+p {
+	margin: 30px 0;
+}
+a {
+	@include transition(.2s ease);
+	color: $color-primary;
+	&:hover {
+		text-decoration: none;
+	}
+}
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+figure {
+	margin: 0 0 24px;
+	@media all and (max-width: 767px) {
+		margin: 0;	
+	}
+}
+figcaption {
+	color: $color-primary-05;
+	text-align: right;
+	margin-top: 10px;
+	a {
+		color: $color-primary-05;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

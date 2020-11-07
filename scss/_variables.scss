@@ -24,3 +24,16 @@ $color-primary-02: tint($color-primary, 83.333%);
 $color-primary-01: tint($color-primary, 91.667%);
 $color-primary-00: tint($color-primary, 100%);
 $color-secondary: #0000ee;
+
+@font-face {
+  font-family: 'Isaac';
+  src: url('../fonts/IsaacBook.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Isaac';
+  src: url('../fonts/IsaacBookItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}

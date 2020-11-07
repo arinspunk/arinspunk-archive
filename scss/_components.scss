@@ -1,144 +1,3 @@
-@font-face {
-  font-family: 'Isaac';
-  src: url('../fonts/IsaacBook.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Isaac';
-  src: url('../fonts/IsaacBookItalic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-}
-* {
-	-webkit-box-sizing:border-box;
-	   -moz-box-sizing:border-box;
-	    	box-sizing:border-box;
-}
-html {
-	overflow-x:hidden;
-	font-size:62.5%; /* Para usar rem de forma "amable": 1px = 1rem */
-	-webkit-text-size-adjust:100%;
-		-ms-text-size-adjust:100%;
-}
-body {
-	width: 100%;
-	margin: 0 auto !important;
-	overflow-x:hidden;
-	font-family: $font;
-	font-size: 1.6rem;
-	line-height: $unit * .5#{rem};
-	color: $color-primary;
-	background: $color-primary-00;
-	//background: $color-primary-00 url('../img/grid.jpg');
-	@include transition(.3s ease);
-	-webkit-font-variant-ligatures: normal;
-       -moz-font-variant-ligatures: normal;
-            font-variant-ligatures: normal;
-	text-rendering: optimizeLegibility;
-	@media all and (max-width: 1279px) {
-		font-size: 1.5rem;
-		line-height: $unit * .4#{rem};
-	}	
-}
-h1, h2, h3 {
-	margin-top: 0;
-	font-weight: normal;
-	&.unused {
-		color: $color-primary-05;
-	}
-}
-h1 {
-	font-size: 7.3rem;
-	line-height: $unit * 1.6#{rem};
-	@media all and (max-width: 1279px) {
-		font-size: 5.8rem;
-		line-height: 7.2rem;
-	}
-	@media all and (max-width: 767px) {
-		font-size: 4.5rem;
-		line-height: 6rem;	
-	}
-}
-h2 {
-	font-size: 3.2rem;
-	line-height: 3.2rem;
-	@media all and (max-width: 1279px) {
-		font-size: 2.5rem;	
-	}
-}
-h3 {
-	font-size: 1.6rem;
-	@media all and (max-width: 1279px) {
-		font-size: 1.5rem;	
-	}
-}
-p {
-	margin: 30px 0;
-}
-a {
-	@include transition(.2s ease);
-	color: $color-primary;
-	&:hover {
-		text-decoration: none;
-	}
-}
-img {
-	max-width: 100%;
-	height: auto;
-	vertical-align: middle;
-	border: 0;
-	-ms-interpolation-mode: bicubic;
-}
-.img-border {
-		border: 1px solid $color-primary-02;
-		&--negative {
-			@extend .img-border;
-			border-color: $color-primary-10;
-		}
-	}
-figure {
-	margin: 0 0 24px;
-	@media all and (max-width: 767px) {
-		margin: 0;	
-	}
-}
-.figure-hover {
-	position: absolute;
-	top: 0;
-	right: 0;
-	opacity: 0;
-	background-color: $color-primary-00;
-	cursor: pointer;
-	&:hover {
-		opacity: 1;
-	}
-	@media all and (max-width: 767px) {
-		position: relative;
-		opacity: 1;	
-		background-color: transparent;
-		margin-top: 12px;
-	}
-}
-figcaption {
-	color: $color-primary-05;
-	text-align: right;
-	margin-top: 10px;
-	a {
-		color: $color-primary-05;
-		&:hover {
-			text-decoration: none;
-		}
-	}
-}
-.flex-right {
-	-webkit-box-pack: end;
-	   -ms-flex-pack: end;
-  	justify-content: flex-end;
-}
-.text-right {
-	text-align: right;
-}
 // Grid
 .main-container {
 	width: 100%;
@@ -190,6 +49,7 @@ figcaption {
     	}
 	}
 }
+
 // Header
 .header {
 	position: fixed;
@@ -346,6 +206,7 @@ figcaption {
 		color: $color-primary-02;
 	}
 } 
+
 // Info
 .info {
 	margin: 191px 0 134px;
@@ -406,6 +267,7 @@ figcaption {
 		}
 	}
 }
+
 // Work
 .work {
 	margin-bottom: ($unit * 12)#{px};
@@ -535,6 +397,7 @@ figcaption {
 		margin: 0;
 	}
 }
+
 // Invitation
 .invitation {
 	border-top: 1px solid $color-primary-02;
@@ -559,6 +422,7 @@ figcaption {
 		}
 	}
 }
+
 // Content
 .content {
 	margin-bottom: 90px;
@@ -577,6 +441,7 @@ figcaption {
 		margin-top: -1px;
 	}
 }
+
 // Footer 
 .footer {
 	border-top: 1px solid $color-primary-02;
@@ -629,6 +494,7 @@ figcaption {
 		}
 	}
 }
+
 // Ticket
 .ticket {
 	position: fixed;
@@ -649,23 +515,3 @@ figcaption {
 		}	
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
