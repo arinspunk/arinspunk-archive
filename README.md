@@ -1,6 +1,6 @@
 # The Arinspunk Archive's Wordpress Theme #
 
-This is the code of the Wordpress Theme for the [Arinspunk Archive](https://arinspunk.com/)'s site.
+This is the code of the Wordpress Theme for the old Arinspunk Archive's site. The new one is made with [Frontity](https://github.com/arinspunk/arinspunk-frontity).
 
 If you want to see the code, try it or reuse for another project, feel free to do it :blush:
 
